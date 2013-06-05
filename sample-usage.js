@@ -9,4 +9,5 @@ def('dev/d2').as({
 def('team').using('dev/d1', 'dev/d2').by(function(d1, d2) {
     console.log(d1.name === 'i am d1');
     console.log(d2.name === 'i am d2');
+    
 });
